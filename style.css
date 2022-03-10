@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav,
+ul li a,
+p {
+    color: #424242;
+    font-family: "Capriola", "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+}
+
+.scroll-fuwa {
+    opacity: 0;
+}
+
+.scroll-fuwa-show {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.error-msg {
+    color: red;
+}
+
+h1 {
+    font-size: 53px;
+    margin: 21px 0;
+}
+
+h2 {
+    font-size: 43px;
+}
+
+.header-container {
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    /* background-color: black; */
+    background: white;
+    opacity: 0.9;
+}
+
+.header-wrapper {
+    width: 70%;
+    height: 64px;
+    margin: 0 auto;
+}
+
+.header-wrapper ul {
+    list-style: none;
+    float: right;
+    display: flex;
+}
+
+.header-wrapper ul li {
+    padding: 15px;
+}
+
+.header-wrapper ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+}
+
+.top-banner-container {
+    height: calc(100vh-64px);
+    width: 100%;
+    background-color: #7fbfff;
+    padding: 30% 0;
+}
+
+.top-banner-wrapper {
+    width: 80%;
+    margin: 20px 10%;
+}
+
+.top-banner-wrapper h1 {
+    color: white;
+    text-align: center;
+}
+.top-banner-wrapper p {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.about-site-container {
+    width: 100%;
+    background: url("img/bg1.png");
+    background-size: cover;
+    padding: 30% 0;
+}
+
+.about-site-wrapper {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.about-site-wrapper h1 {
+    margin: 21px 0;
+    color: white;
+    text-align: center;
+}
+.about-site-wrapper p {
+    color: white;
+    margin: 21px 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.about-me-container {
+    padding: 30% 0;
+    width: 100%;
+}
+.about-me-wrapper {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.about-me-parent {
+    display: flex;
+}
+
+.about-me-child1 {
+    width: 32%;
+}
+
+.about-me-child1 img {
+    height: 150px;
+    width: 150px;
+    float: right;
+}
+
+.about-me-child2 {
+    width: 67%;
+    margin-left: 1%;
+}
+
+.about-me-child2 li {
+    color: aqua;
+}
+
+.about-me-wrapper h1 {
+    text-align: center;
+}
+
+.about-me-wrapper ul {
+    padding: 0 20px;
+}
+
+.works-container {
+    width: 100%;
+    padding: 15% 0;
+    background: url("img/bg1.png");
+    background-size: cover;
+}
+
+.works-wrapper {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.works-wrapper h1 {
+    color: white;
+    text-align: center;
+}
+
+.works-wrapper p {
+    color: white;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.works-parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works-child {
+    width: 30%;
+    margin: 0 1.5%;
+}
+.works-child img {
+    width: 100%;
+}
+
+.form-container {
+    width: 100%;
+    margin: 30% 0;
+}
+
+.form-wrapper {
+    width: 70%;
+    margin: 0 15%;
+}
+
+.form-wrapper h1,
+.form-wrapper p {
+    text-align: center;
+}
+
+.form-wrapper-input {
+    border: none;
+    border-bottom: 1px solid #424242;
+    width: 42%;
+    margin: 3%;
+}
+
+.form-wrapper textarea {
+    border: none;
+    border-bottom: 1px solid #424242;
+    width: 94%;
+    margin: 3%;
+}
+
+.form-wrapper-submit {
+    width: 103px;
+
+    margin: 0 auto;
+    display: block;
+    background: #7fbfff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header {
+        display: none;
+    }
+
+    .about-me-wrapper {
+        width: 98%;
+        margin: 15% 1%;
+    }
+
+    .about-me-child1 {
+        float: left;
+    }
+
+    .works-wrapper {
+        width: 98%;
+        margin: 15% 1%;
+    }
+
+    .form-wrapper {
+        width: 98%;
+        margin: 0 1%;
+    }
+}
